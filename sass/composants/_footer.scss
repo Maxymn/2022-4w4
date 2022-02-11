@@ -1,0 +1,36 @@
+.division1__section{
+    width: 30%;
+    padding: 1em;
+    color: $color__texte-secondaire;
+}
+
+.footer__division1{
+    background-color: $color__background-carre;
+    margin: 1.5em;
+    border-radius: 25px;
+}
+
+.section2__lien{
+    padding: 0.4em;
+}
+
+.divison2__copyright{
+text-align: center;
+}
+
+.menu-secondaire-container{
+
+    width: 20%;
+    .menu-secondaire{
+
+        
+    }
+}
+
+.menu-item{
+    list-style: none;
+
+    a{
+        text-decoration: none;
+    }
+}
