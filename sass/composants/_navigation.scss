@@ -39,12 +39,14 @@
             font-family: $font__navigation-h2-a;
             padding: 5px;
             text-decoration: none;
+            transition: background-color 1s;
 
             &:hover{
                 background-color: $background__link-hover;
+                
             }
-        }
 
+        }
 
     }
 }

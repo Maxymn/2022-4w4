@@ -4,7 +4,7 @@
     background-color: cadetblue;
     justify-content: space-evenly;
     row-gap: 20px;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 .main__titre {
     font-size: 2rem;
@@ -19,13 +19,15 @@
     width: 100%;
     @media screen and (min-width: $largeur__media-tablette){
         width: 45%;
+
     }
     @media screen and (min-width: $largeur__media-desktop){
         width: 28%;
     }
-    padding: 10px;
+    padding: 15px;
     background-color: GhostWhite;
     border-radius: 25px;
+    margin-right: 10px;
 }
 .carte__titre {
     font-size: 1.5rem;

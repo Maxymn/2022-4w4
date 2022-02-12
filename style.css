@@ -380,13 +380,14 @@ VARIABLES
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex: 1;
 }
 
 .division2__section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 
@@ -459,6 +460,7 @@ COMPOSANTS
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   padding: 5px;
   text-decoration: none;
+  transition: background-color 1s;
 }
 
 .menu-principal-container .menu-item a:hover {
@@ -525,6 +527,11 @@ COMPOSANTS
 
 .icone__lien {
   padding: 0.3rem;
+  transition: transfom 2s;
+}
+
+.icone__lien:hover {
+  transform: scale(1.2);
 }
 
 /*--------------------------------------------------------
@@ -546,6 +553,10 @@ Recherche
 @media screen and (min-width: 600px) {
   .recherche__input {
     width: 15vw;
+    transition: transform 1s;
+  }
+  .recherche__input:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -565,7 +576,7 @@ Recherche
   background-color: cadetblue;
   justify-content: space-evenly;
   row-gap: 20px;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .main__titre {
@@ -579,9 +590,10 @@ Recherche
   flex-direction: column;
   border: 1px solid 1px;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   background-color: GhostWhite;
   border-radius: 25px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 600px) {
@@ -624,6 +636,7 @@ Recherche
 
 .divison2__copyright {
   text-align: center;
+  color: GhostWhite;
 }
 
 .menu-secondaire-container {
@@ -636,5 +649,6 @@ Recherche
 
 .menu-item a {
   text-decoration: none;
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

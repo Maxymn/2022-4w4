@@ -45,6 +45,11 @@ display: flex;
 
     &__lien{
         padding: 0.3rem;
+        transition: transfom 2s;
+    }
+
+    &__lien:hover{
+        transform: scale(1.2);
     }
 }
 
@@ -64,6 +69,11 @@ Recherche
 
         @media screen and (min-width: $largeur__media-tablette){ 
             width: 15vw;
+            transition: transform 1s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 
