@@ -1,39 +1,45 @@
-/**
-Theme name: Exercice 1 Normandin Maxym hihi
-Author: Maxym Normandin
-Description: Exercice dans le cadre du cours 4W4
-Version: 1.0
-Requires PHP: 7.0
+/*
+theme name: Exercice 2 hihi Normandin Maxym
+Author: Normandin Maxym
+Author URI: https://github.com/Maxymn/2022-4w4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
 License: GNU General Public License v2 or later
+License URI: LICENSE
 Text Domain: cidw-4w4
+
 */
-
-
-/* -----------------------------------------------------------------
-INITIALISATION
-------------------------------------------------------------------- */
-@import "initialisation/_normalize";
-@import "initialisation/_boxsize";
-
-/* -----------------------------------------------------------------
+/* ---------------------------------------------------------
 VARIABLES
-------------------------------------------------------------------- */
+--------------------------------------------------------- */
 @import "variables/couleurs";
-@import "variables/structure";
 @import "variables/typo";
+@import "variables/structure";
 
-/* -------------------LAYOUT---------- */
-@import "layout/_layout";
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/boxsize";
 
-/* -----------------------------------------------------------------
-ELEMENTS
-------------------------------------------------------------------- */
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
 @import "elements/links";
 
-/* -----------------------------------------------------------------
-COMPOSANTS
-------------------------------------------------------------------- */
-@import "composants/navigation";
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composants/contenu";
 @import "composants/entete";
-@import "composants/cours";
+@import "composants/navigation";
 @import "composants/footer";
+@import "composants/erreur_404";
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";

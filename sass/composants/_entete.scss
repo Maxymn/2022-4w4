@@ -1,89 +1,14 @@
-.site__header{
-    display: flex;
-    flex-direction: column;
+.site__header {
+    background-color: $color__background-header;
+    color: $color__font-header;
+    padding-left: 10px;
 
-    @media screen and (min-width: $largeur__media-tablette){
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .header__titre {
+      font-size: 3em;
+      font-family: $font__titre;
     }
-
-    &__titre{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h1{
-            margin: 0;
-            font-family: $font__header-h1;
-            font-size: clamp(1rem, 7vw, 16rem);
-            padding-left: 1rem;
-        }
-
-        h2{
-            font-family: $font__header-h2;
-            font-size: clamp(.6rem, 2.5vw, 8rem);
-            padding-left: 1rem;
-            
-        }
+    .header__description {
+      font-size: 1.5rem;
+      font-family: $font__main;
     }
-
-    &__util{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 2vw 2vw 2vw;
-
-        @media screen and (min-width: $largeur__media-tablette){
-            margin-right: 5vw;
-        }
-    }
-}
-
-.icone{
-display: flex;
-
-    &__lien{
-        padding: 0.3rem;
-        transition: transfom 2s;
-    }
-
-    &__lien:hover{
-        transform: scale(1.2);
-    }
-}
-
-/*--------------------------------------------------------
-Recherche
---------------------------------------------------------*/
-.recherche{
-    position: relative;
-    width: 100%;
-
-    &__input{
-        border: none;
-        outline: none;
-        padding: 0.25vw;
-        box-sizing: content-box;
-        width: 95%;
-
-        @media screen and (min-width: $largeur__media-tablette){ 
-            width: 15vw;
-            transition: transform 1s;
-
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
-
-    &__bouton{
-        position: absolute;
-        width: 24px;
-        height: 20px;
-        outline: none;
-        border: none;
-        padding: 0;
-        margin: 0;
-    }
-}
+  }
