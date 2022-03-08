@@ -1,4 +1,4 @@
-# Exercice 1 - 4w4 - Conception d'interface et développement Web
+# Exercice 2 - 4w4 - Conception d'interface et développement Web
 ### Auteur : Maxym Normandin
 ### Date de remise : 11 février 2022
 ```
