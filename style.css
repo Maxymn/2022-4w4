@@ -367,15 +367,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #f40b0b;
+  color: #5c4033;
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: #795544;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
+  color: white;
 }
 
 .site__footer a:focus {
@@ -387,15 +387,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  color: #BFA584;
 }
 
 .header__titre a:visited {
-  color: #7a49d4;
+  color: #f0bb77;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #f09977;
 }
 
 .header__titre a:focus {
@@ -410,7 +410,8 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
-  background-color: #d5e6f1;
+  padding: 0.5rem;
+  background-color: #f0bb77;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -475,8 +476,8 @@ COMPOSANTES
 .site__header {
   display: flex;
   align-items: center;
-  background-color: #6faee2;
-  color: #fa9292;
+  background-color: #8C2703;
+  color: #f89e62;
   padding-left: 10px;
 }
 
@@ -486,6 +487,7 @@ COMPOSANTES
 }
 
 .site__header .header__description {
+  margin-left: 1rem;
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -493,6 +495,7 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
+  margin-right: 0.5rem;
   margin-left: auto;
 }
 
@@ -537,11 +540,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #8293e3;
+  background-color: #f0bb77;
 }
 
 .menu-item a:hover {
-  background-color: #2832b8;
+  background-color: #A63F03;
 }
 
 @media screen and (min-width: 800px) {
@@ -555,7 +558,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #07143b;
+  background-color: #A67449;
   padding: 15px;
 }
 
@@ -576,18 +579,24 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: #f40b0b;
+  color: #5c4033;
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #19e123;
+  color: white;
 }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: #4a342b;
   text-align: center;
+}
+
+.footer__recherche {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .erreur-404 {
@@ -614,6 +623,13 @@ COMPOSANTES
 .recherche__input {
   flex: 1;
   width: 100%;
+  background-color: rgba(240, 187, 119, 0.3);
+  outline: none;
+  transition: all .3s;
+}
+
+.recherche__input:focus {
+  background-color: rgba(240, 187, 119, 0.7);
 }
 
 .recherche__bouton {
@@ -683,28 +699,28 @@ LAYOUT
 theme name: Exercice 2 Normandin Maxym
 */
 .site {
-  background-color: #dae0f1;
+  background-color: #ccc4ba;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #6faee2;
+  background-color: #8C2703;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #051d29;
+  background-color: #A63F03;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #d5e6f1;
+  background-color: #f0bb77;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #07143b;
+  background-color: #A67449;
 }
 
 .site {

@@ -5,6 +5,13 @@
     &__input{
         flex: 1;
         width: 100%;
+        background-color: rgba(#f0bb77, .3);
+        outline: none;
+        transition: all .3s;
+
+        &:focus{
+            background-color: rgba(#f0bb77, .7)
+        }
     }
 
     &__bouton{

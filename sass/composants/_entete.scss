@@ -10,6 +10,7 @@
       font-family: $font__titre;
     }
     .header__description {
+      margin-left: 1rem;
       font-size: 1.5rem;
       font-family: $font__main;
     }
@@ -18,8 +19,8 @@
   .util{
     display: flex;
     flex-direction: column;
+    margin-right: 0.5rem;
     margin-left: auto;
-
     &__lien{
       display: flex;
     }
